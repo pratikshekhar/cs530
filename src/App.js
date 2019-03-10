@@ -20,6 +20,16 @@ class App extends Component {
     console.log(this.state.cravings);
   }
 
+
+  componentDidMount = () => {
+    const json = localStorage.getItem("recipes");
+    const recipes = JSON.parse(json);
+    this.setState({ cravings:recipes });
+  }
+  componentDidUpdate = () => {
+    const recipes = JSON.stringify(this.state.cravings );
+    localStorage.setItem("recipes", recipes);
+  }
   render() {
     return (
       <div className="App">
@@ -39,7 +49,7 @@ class App extends Component {
                                         </h5>
                                     </div>
                                     <button className="craving__buttons">
-                                    <Link to={{pathname: `/recipe/${recipe.recipe_id}`}}>View Recipe</Link>
+                                    <Link to={{pathname: `/recipe/${recipe.recipe_id}`, state: {recipe: recipe.title}}}>View Recipe</Link>
                                     </button>
                                 </div>
                             </div>
