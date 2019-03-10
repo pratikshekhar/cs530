@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+img {
+  width: 100%;
+  height: 220px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -14,7 +19,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -22,6 +26,65 @@
 .App-link {
   color: #61dafb;
 }
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.form__input {
+  background: transparent;
+  border: 0;
+  border-bottom: solid 6px #e83e8c;;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.form__button {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+.craving__text {
+  margin-left: 15px;
+}
+
+.craving__box {
+  background: #fff;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  text-align: left;
+  overflow: hidden;
+}
+
+.craving__title {
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+}
+
+.craving__buttons {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
 
 @keyframes App-logo-spin {
   from {
