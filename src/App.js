@@ -3,6 +3,8 @@ import './App.css';
 import Form from './Components/Form';
 import apiKey from './Constant.js';
 
+import { Link } from "react-router-dom";
+
 class App extends Component {
 
   state = {
@@ -32,9 +34,13 @@ class App extends Component {
                                 <div className="craving__box">
                                     <img className="craving__box-img" src={recipe.image_url} alt={recipe.title} />
                                     <div className="craving__text">
-                                        <h5 className="craving__title">{recipe.title}</h5>
+                                        <h5 className="craving__title">
+                                        { recipe.title.length < 20 ? `${recipe.title}`: `${recipe.title.substring(0,20)}...`}
+                                        </h5>
                                     </div>
-                                    <button className="craving__buttons">View Recipe</button>
+                                    <button className="craving__buttons">
+                                    <Link to={{pathname: `/recipe/${recipe.recipe_id}`}}>View Recipe</Link>
+                                    </button>
                                 </div>
                             </div>
                         );
