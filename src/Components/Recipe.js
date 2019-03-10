@@ -22,7 +22,11 @@ componentDidMount = async () => {
 render() {
     const recipe = this.state.activeRecipe;
     return (
+
       <div className="container">
+      <button className="active-recipe__button" style = {{marginLeft:"450px"}}>
+        <Link to="/">Back to Dashboard</Link>
+      </button>
         { this.state.activeRecipe.length !== 0 &&
           <div className="active-recipe">
             <img className="active-recipe__img" src={recipe.image_url} alt={recipe.title}/>
@@ -33,9 +37,6 @@ render() {
             <p className="active-recipe__website">Website:
               <span><a href={recipe.publisher_url}>{recipe.publisher_url}</a></span>
             </p>
-            <button className="active-recipe__button">
-              <Link to="/">Go Home</Link>
-            </button>
           </div>
         }
       </div>
