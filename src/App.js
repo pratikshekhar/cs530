@@ -14,7 +14,7 @@ class App extends Component {
   getCravings = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
-    const apiCall = await fetch(`https://www.food2fork.com/api/search?key=${apiKey}&q=${recipeName}&count=5`);
+    const apiCall = await fetch(`https://www.food2fork.com/api/search?key=${apiKey}&q=${recipeName}&count=20`);
     const data = await apiCall.json();
     this.setState({cravings: data.recipes});
     console.log(this.state.cravings);

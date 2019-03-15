@@ -35,7 +35,7 @@ render() {
               Publisher: <span>{ recipe.publisher }</span>
             </h4>
             <p className="active-recipe__website">Website:
-              <span><a href={recipe.publisher_url}>{recipe.publisher_url}</a></span>
+              <span><a href={recipe.publisher_url}>{recipe.source_url}</a></span>
             </p>
           </div>
         }
