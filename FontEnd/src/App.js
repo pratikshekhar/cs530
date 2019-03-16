@@ -173,9 +173,9 @@ class App extends Component {
                 <Row gutter={16}>
                   {this.state.cravings.map((recipe, index) => {
                     return (
-                      <Col span={6} key={recipe.recipe_id}>
+                      <Col span={7} key={recipe.recipe_id}>
                         <Card
-                          style={{ width: 400, marginBottom: 15 }}
+                          style={{ width: 400}}
                           cover={<img alt="example" src={recipe.image_url} />}
                           actions={[
                             <Icon
