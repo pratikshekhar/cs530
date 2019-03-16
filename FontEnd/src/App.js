@@ -168,14 +168,27 @@ class App extends Component {
         <Content style={{ padding: "0 50px" }}>
           <Breadcrumb style={{ margin: "16px 0" }} />
           <div style={{ background: "#fff", padding: 24, minHeight: 280 }}>
-            <div style={{ background: "#ECECEC", padding: "30px" }}>
+            <div
+              style={{
+                background: "#ECECEC",
+                padding: "30px",
+                flexDirection: "row",
+                flexWrap: "wrap"
+              }}
+            >
               {this.state.cravings.length > 0 && (
-                <Row gutter={16}>
+                <Row style={{ overflow: "hidden" }}>
                   {this.state.cravings.map((recipe, index) => {
                     return (
-                      <Col span={7} key={recipe.recipe_id}>
+                      <Col span={8} key={recipe.recipe_id}>
                         <Card
-                          style={{ width: 400}}
+                          style={{
+                            marginBottom: 20,
+                            marginLeft: 9,
+                            marginRight: 9,
+                            minWidth: 310,
+                            maxWidth: 430
+                          }}
                           cover={<img alt="example" src={recipe.image_url} />}
                           actions={[
                             <Icon
