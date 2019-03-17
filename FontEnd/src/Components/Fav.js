@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import apiKey from "../Constant.js";
 import { Link } from "react-router-dom";
 import { Layout, Menu, Breadcrumb } from "antd";
@@ -23,13 +22,9 @@ class Fav extends Component {
     );
     const data = await apiCall.json();
     this.setState({ cravings: data.recipes });
-    console.log(this.state.cravings);
   };
 
   componentDidMount = () => {
-    // const json = localStorage.getItem("recipes");
-    // const recipes = JSON.parse(json);
-    // this.setState({ cravings: recipes });
     var url = "http://localhost:3005/getFav?userName=pratik";
     fetch(url, {
       method: "GET",
@@ -54,11 +49,6 @@ class Fav extends Component {
       .catch(err => {
         console.log(err);
       });
-  };
-
-  componentDidUpdate = () => {
-    // const recipes = JSON.stringify(this.state.cravings);
-    // localStorage.setItem("recipes", recipes);
   };
 
   cardSave = recipe => {
@@ -127,7 +117,6 @@ class Fav extends Component {
     return (
       <Layout className="layout">
         <Header>
-          <div className="logo" />
           <Menu
             theme="dark"
             mode="horizontal"
@@ -135,9 +124,9 @@ class Fav extends Component {
             style={{ lineHeight: "64px" }}
           >
             <Menu.Item key="1">
-              <Link to={{ pathname: "/" }}>Home</Link>
+              <Link to={{ pathname: "/" }}>Dashboard</Link>
             </Menu.Item>
-            <Menu.Item key="2">Fav</Menu.Item>
+            <Menu.Item key="2">Favorite</Menu.Item>
           </Menu>
         </Header>
         <Content style={{ padding: "0 50px" }}>
@@ -203,14 +192,14 @@ class Fav extends Component {
                     textAlign: "center"
                   }}
                 >
-                  <h5>No Fav Recipe</h5>
+                  <h5>No Favorite Cravings</h5>
                 </div>
               )}
             </div>
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
+          Search Your Cravings ©2018 Created by Pratik Shekhar
         </Footer>
       </Layout>
     );

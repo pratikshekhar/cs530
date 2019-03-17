@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 import apiKey from "./Constant.js";
-
 import { Input, Card, Col, Row, Icon, Layout, Menu, Breadcrumb } from "antd";
 import "antd/dist/antd.css";
 
@@ -18,17 +17,14 @@ class App extends Component {
   };
 
   async getCravings(recipeName) {
-    console.log(recipeName);
     const apiCall = await fetch(
-      `https://www.food2fork.com/api/search?key=${apiKey}&q=${recipeName}&count=20`
+      `https://www.food2fork.com/api/search?key=${apiKey}&q=${recipeName}`
     );
     const data = await apiCall.json();
     this.setState({ cravings: data.recipes });
 
     const recipesData = JSON.stringify(data.recipes);
     localStorage.setItem("recipesData", recipesData);
-
-    console.log(this.state.cravings);
   }
 
   componentDidMount = () => {
@@ -129,7 +125,6 @@ class App extends Component {
     return (
       <Layout className="layout">
         <Header>
-          <div className="logo" />
           <Menu
             theme="dark"
             mode="horizontal"
@@ -141,9 +136,9 @@ class App extends Component {
               justifyContent: "center"
             }}
           >
-            <Menu.Item key="1">Home</Menu.Item>
+            <Menu.Item key="1">Dashboard</Menu.Item>
             <Menu.Item key="2">
-              <Link to={{ pathname: "/fav" }}>Fav</Link>
+              <Link to={{ pathname: "/fav" }}>Favorite</Link>
             </Menu.Item>
             <Menu.Item
               style={{
@@ -156,7 +151,7 @@ class App extends Component {
                   margin: 0,
                   flex: 1
                 }}
-                placeholder="input search text"
+                placeholder="Search Your Cravings!"
                 enterButton="Search"
                 size="large"
                 onChange={e => this.setState({ searchedText: e.target.value })}
@@ -227,14 +222,14 @@ class App extends Component {
                     textAlign: "center"
                   }}
                 >
-                  <h5>Search for Recipe</h5>
+                  <h5>Search for Your Cravings</h5>
                 </div>
               )}
             </div>
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
+          Search Your Cravings ©2018 Created by Pratik Shekhar
         </Footer>
       </Layout>
     );
