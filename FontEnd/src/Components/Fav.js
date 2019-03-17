@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import apiKey from "../Constant.js";
+import sett from "../Constant.js";
 import { Link } from "react-router-dom";
 import { Layout, Menu, Breadcrumb } from "antd";
 import "antd/dist/antd.css";
@@ -7,6 +7,9 @@ import { Card, Col, Row, Icon } from "antd";
 
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
+
+var apiKey = sett.apiKey;
+var host = sett.host;
 
 class Fav extends Component {
   state = {
@@ -25,7 +28,7 @@ class Fav extends Component {
   };
 
   componentDidMount = () => {
-    var url = "http://localhost:3005/getFav?userName=pratik";
+    var url = host + "getFav?userName=pratik";
     fetch(url, {
       method: "GET",
       mode: "cors"
@@ -53,9 +56,7 @@ class Fav extends Component {
 
   cardSave = recipe => {
     var url =
-      "http://localhost:3005/addToFav?cardId=" +
-      JSON.stringify(recipe) +
-      "&&userName=pratik";
+      host + "addToFav?cardId=" + JSON.stringify(recipe) + "&&userName=pratik";
     fetch(url, {
       method: "GET",
       mode: "cors",
@@ -81,7 +82,8 @@ class Fav extends Component {
 
   cardUnsave = recipe => {
     var url =
-      "http://localhost:3005/removeFromFav?cardId=" +
+      host +
+      "removeFromFav?cardId=" +
       JSON.stringify(recipe) +
       "&&userName=pratik";
     fetch(url, {

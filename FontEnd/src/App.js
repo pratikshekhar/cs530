@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
-import apiKey from "./Constant.js";
+import sett from "./Constant.js";
 import { Input, Card, Col, Row, Icon, Layout, Menu, Breadcrumb } from "antd";
 import "antd/dist/antd.css";
 
+var apiKey = sett.apiKey;
+var host = sett.host;
 const Search = Input.Search;
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
@@ -35,7 +37,7 @@ class App extends Component {
       this.setState({ cravings: recipes });
     }
 
-    var url = "http://localhost:3005/getFav?userName=pratik";
+    var url = host + "getFav?userName=pratik";
     fetch(url, {
       method: "GET",
       mode: "cors"
@@ -65,9 +67,7 @@ class App extends Component {
 
   cardSave = recipe => {
     var url =
-      "http://localhost:3005/addToFav?cardId=" +
-      JSON.stringify(recipe) +
-      "&&userName=pratik";
+      host + "addToFav?cardId=" + JSON.stringify(recipe) + "&&userName=pratik";
     fetch(url, {
       method: "GET",
       mode: "cors"
@@ -90,7 +90,8 @@ class App extends Component {
 
   cardUnsave = recipe => {
     var url =
-      "http://localhost:3005/removeFromFav?cardId=" +
+      host +
+      "removeFromFav?cardId=" +
       JSON.stringify(recipe) +
       "&&userName=pratik";
     fetch(url, {
