@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-FontEnd/node_modules/*
+FrontEnd/node_modules/*
 Server/node_modules/*
