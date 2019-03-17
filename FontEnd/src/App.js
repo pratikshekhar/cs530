@@ -202,7 +202,7 @@ class App extends Component {
                             />,
                             <Icon
                               type="global"
-                              onClick={() => window.open(recipe.publisher_url)}
+                              onClick={() => window.open(recipe.f2f_url)}
                             />
                           ]}
                         >
@@ -229,7 +229,7 @@ class App extends Component {
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Search Your Cravings ©2018 Created by Pratik Shekhar
+          Search Your Cravings ©2019 Created by Pratik Shekhar
         </Footer>
       </Layout>
     );

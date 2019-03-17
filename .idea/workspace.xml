@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ddad36c-1a45-497c-8a51-305860abb0e8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/Components/Form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/Components/Login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/Components/Recipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/logo.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/App.css" afterPath="$PROJECT_DIR$/FontEnd/src/App.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/App.js" afterPath="$PROJECT_DIR$/FontEnd/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/Components/Fav.js" afterPath="$PROJECT_DIR$/FontEnd/src/Components/Fav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/Components/Router.js" afterPath="$PROJECT_DIR$/FontEnd/src/Components/Router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/Constant.js" afterPath="$PROJECT_DIR$/FontEnd/src/Constant.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/package-lock.json" afterPath="$PROJECT_DIR$/Server/package-lock.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +17,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="20" column="73" lean-forward="false" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+            <state relative-caret-position="-36">
+              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -46,8 +37,8 @@
       <file leaf-file-name="Fav.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/Components/Fav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1277">
-              <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+            <state relative-caret-position="257">
+              <caret line="201" column="36" lean-forward="false" selection-start-line="201" selection-start-column="36" selection-end-line="201" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -80,21 +71,19 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Components/Recipe.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/Components/Fav.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/App.css" />
         <option value="$PROJECT_DIR$/FontEnd/src/Components/Form.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/Components/Recipe.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/Components/Router.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/Constant.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/Components/Fav.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/App.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
-    <option name="height" value="727" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -261,8 +250,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="23" width="1280" height="727" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -273,7 +261,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2861073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -575,16 +563,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/Components/Fav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1277">
-          <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+        <state relative-caret-position="257">
+          <caret line="201" column="36" lean-forward="false" selection-start-line="201" selection-start-column="36" selection-end-line="201" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="20" column="73" lean-forward="false" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+        <state relative-caret-position="-36">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding />
         </state>
       </provider>
