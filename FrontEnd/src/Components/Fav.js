@@ -174,7 +174,7 @@ class Fav extends Component {
                             />,
                             <Icon
                               type="global"
-                              onClick={() => window.open(recipe.publisher_url)}
+                              onClick={() => window.open(recipe.f2f_url)}
                             />
                           ]}
                         >
