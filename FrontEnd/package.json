@@ -2,7 +2,6 @@
   "name": "cs530",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pratikshekhar.github.io/cs530/FontEnd",
   "dependencies": {
     "antd": "^3.15.0",
     "bootstrap": "^4.3.1",
@@ -14,10 +13,8 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8047 react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
