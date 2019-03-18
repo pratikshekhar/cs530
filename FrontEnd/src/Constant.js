@@ -6,7 +6,7 @@
 
 const sett = {
   apiKey: "c2785eea2057ed5e73c507ece4189bdc",
-  host: "http://sandbox.cci.drexel.edu:8047/"
+  host: "http://sandbox.cci.drexel.edu:8060/"
 };
 // const apiKey = "ebf05d28fa1bd8fa5f989296db4e0db3"; //chetan
 
